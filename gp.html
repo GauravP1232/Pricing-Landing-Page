@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Awesome Landing Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            height: 10vh;
+        }
+
+        header h1 {
+            position: absolute;
+            margin-top: 20px;
+            left: 20%;
+        }
+
+        .nav {
+            position: absolute;
+            width: 100%;
+        }
+
+        .nav a {
+            position: relative;
+            left: 45%;
+            top: 20px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .pricing-card {
+            border: 1px solid #177394;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #9f1010;
+        }
+
+        .select-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .social-icon-link {
+            font-size: var(--p-font-size);
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            margin-right: 15px;
+        }
+
+        .select-btn:hover {
+            background-color: #45a049;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            position: absolute;
+            background-color: #000;
+            width: 100%;
+            color: white;
+            height: 15vh;
+            bottom: 0;
+        }
+
+        footer h2 {
+            position: absolute;
+            left: 45%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LOGO</h1>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+            <a href="#">FAQ</a>
+            <a href="#">About</a>
+            <a href="#">Info</a>
+            <a href="#">Tricks</a>
+            <a href="#">Login</a>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <h2>Welcome to Our Awesome Product</h2>
+        <p>Discover the features that make us stand out!</p>
+        <a href="#pricing" class="cta-btn">See Pricing</a>
+    </section>
+
+    <section class="pricing-container" id="pricing">
+        <div class="pricing-card">
+            <h2>Basic Plan</h2>
+            <p class="price">$10/month</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+            <button class="select-btn">Select Plan</button>
+        </div>
+
+        <div class="pricing-card">
+            <h2>Pro Plan</h2>
+            <p class="price">$20/month</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Feature 4</li>
+            </ul>
+            <button class="select-btn">Select Plan</button>
+        </div>
+    
+    </section>
+
+    <footer>
+        <h2>&copy; Copyright Reserves.</h2>
+      
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
